@@ -10,29 +10,34 @@ const PageFooter = () => {
             <p className={'font-bold'}>Katra Sterner - Portfolio Website - 2026</p>
             <div className={'flex flex-row gap-2'}>
                 <motion.a
+                    title={"Email"}
+                    aria-label={"Email Me"}
                     href={'/contact'}
                     className={linkStyle}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                ><Mail size={20}/></motion.a>
+                ><Mail size={20} aria-hidden={"true"} /></motion.a>
                 <motion.a
+                    title={"GitHub Profile"}
                     href={'https://github.com/KatraSterner'}
                     className={linkStyle}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                ><img src='../../public/Github_Logo.png' className={'h-7 pt-1'} /></motion.a>
+                ><img src='../../public/Github_Logo.png' alt={"GitHub Logo"} className={'h-7 pt-1'} /></motion.a>
                 <motion.a
+                    title={"LinkedIn Profile"}
                     href={'https://www.linkedin.com/in/katra-sterner-276480332'}
                     className={linkStyle}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                ><img src='../../public/LinkedIn_Logo.png' className={'h-5'} /></motion.a>
+                ><img src='../../public/LinkedIn_Logo.png' alt={"LinkedIn Logo"} className={'h-5'} /></motion.a>
                 <motion.a
+                    title={"Instagram Profile"}
                     href={'https://www.instagram.com/kat.rollie'}
                     className={linkStyle}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                ><img src='../../public/Instagram_Logo.png' className={'h-6'} /></motion.a>
+                ><img src='../../public/Instagram_Logo.png' alt={"Instagram Logo"} className={'h-6'} /></motion.a>
             </div>
         </footer>
     )
