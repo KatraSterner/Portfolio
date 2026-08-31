@@ -5,20 +5,20 @@ import Navigation from "./components/Navigation.tsx";
 import Contact from "./pages/Contact.tsx";
 import Experience from "./pages/Experience.tsx";
 import Projects from "./pages/Projects.tsx";
+import PageFooter from "./components/PageFooter.tsx";
 
 function App() {
 
   return (
-    <div className={'bg-blank text-blank min-h-screen p-5'}>
+    <div className={'bg-blank text-blank min-h-screen pt-1'}>
       {/* maybe move to separate component later */}
       <BrowserRouter>
         {/*
         <p className={'bg-green-400 sm:bg-blue-400 md:bg-red-400 lg:bg-pink-400 xl:bg-purple-400 2xl:bg-amber-400'}>example</p>
         */}
-        <div className={'flex justify-center m-1 mt-8'}>
+        <header className={'flex justify-center m-1 mt-14'}>
           <Navigation />
-        </div>
-
+        </header>
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -28,6 +28,8 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
+
+      <PageFooter />
     </div>
   )
 }
