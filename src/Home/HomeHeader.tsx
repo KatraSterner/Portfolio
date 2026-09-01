@@ -13,6 +13,7 @@ const HomeHeader = () => {
                 <p className={"text-[clamp(2rem,2vw,3rem)] font-bold"}>Software Engineer</p>
                 <motion.a
                     href={'/about'}
+                    title={"navigate to about page"}
                     className={"self-start text-[clamp(1.25rem,1.5vw,1.75rem)] font-bold bg-primary-2 rounded-2xl p-3 px-12 mt-6 shadow-md hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-1"}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
