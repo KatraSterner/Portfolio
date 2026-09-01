@@ -60,6 +60,8 @@ const Navigation = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => {setIsOpen(!isOpen)}}
+                title={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+                aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
                 className={'bg-primary-2 hover:bg-primary-3 shadow-md rounded-2xl flex items-center justify-center h-8 w-8'}
             >
                 <AnimatePresence mode="wait" initial={false}>
